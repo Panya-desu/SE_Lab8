@@ -1,6 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Test Cases ***
+Open Browser
+	Open Browser To Login Page
+	Page Should Contain    วิทยาลัยการคอมพิวเตอร์
+	Close Browser
+	
 *** Keywords ***
 Open Browser To Login Page
     ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys
