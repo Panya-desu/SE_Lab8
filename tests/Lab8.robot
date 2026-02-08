@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 *** Test Cases ***
 Open Browser
 	Open Browser To Login Page
-	Page Should Contain    วิทยาลัยการคอมพิวเตอร์
+	Title Should Be    "วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น - College of Computing, Khon Kaen University"
 	Close Browser
 	
 *** Keywords ***
